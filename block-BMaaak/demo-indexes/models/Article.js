@@ -16,11 +16,11 @@ articleSchema.index({ tagsString: 1 });
 
 // Add text indexes on title as users will search for texts present in an article's title.
 
-articleSchema.index({ title: "title_name" });
+articleSchema.index({ title: 1 });
 
 // Update text indexes to include descriptions as well. Implement text indexes on both title and description.
 
-articleSchema.index({ title: "title_name", description: "text" });
+articleSchema.index({ title: "text", description: "text" });
 
 // export schema
 
